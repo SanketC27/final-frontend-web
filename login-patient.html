@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Login</title>
+
+  <!-- Bootstrap CSS (Optional) -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <!-- Adjust the path if needed (e.g., "CSS/patientLogin.css") -->
+  <link rel="stylesheet" href="CSS/login-patient.css" />
+</head>
+
+<body>
+  <!-- Navbar (same style as before) -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="Images/logo.png" alt="CareSync Logo" class="navbar-logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Patient Login Section -->
+  <div class="container mt-5 pt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="text-center">Patient Login</h3>
+          </div>
+          <div class="card-body text-center">
+            <!-- Patient Login Form -->
+            <div id="patientLoginForm" class="login-form" style="display: block;">
+              <h2>Patient Login</h2>
+              <form id="patientLoginFormForm">
+                <div class="form-group">
+                  <label for="patientUsername">Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="patientUsername"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="patientPassword">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="patientPassword"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-info btn-block">
+                  Login
+                </button>
+              </form>
+
+              <!-- "New user?" line included -->
+              <div class="mt-2">
+                <p>New user? <a href="signup.html">Please register here</a></p>
+              </div>
+
+              <button id="patientBackButton" class="btn btn-secondary mt-2">
+                Back
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS (jQuery, Popper, Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  ></script>
+
+  
+</body>
+</html>

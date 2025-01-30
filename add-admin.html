@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Doctor</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="CSS/add-admin.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="Images/logo.png" alt="CareSync Logo" class="navbar-logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Log Out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Add Doctor Section -->
+  <div class="container mt-5 pt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="text-center">Add Doctor</h3>
+          </div>
+          <div class="card-body">
+            <form id="addDoctorForm">
+              <div class="form-group">
+                <label for="doctorID">Doctor ID</label>
+                <input type="text" class="form-control" id="doctorID" required />
+              </div>
+              
+              <div class="form-group">
+                <label for="doctorName">Doctor Name</label>
+                <input type="text" class="form-control" id="doctorName" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber" required />
+              </div>
+
+              <div class="form-group">
+                <label for="department">Department</label>
+                <select class="form-control" id="department" required>
+                  <option value="">Select Department</option>
+                  <option value="Cardiology">Cardiology</option>
+                  <option value="Surgery">Surgery</option>
+                  <option value="Dermatology">Dermatology</option>
+                  <option value="Neurology">Neurology</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" required />
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" required />
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Add Doctor</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer mt-5">
+    <div class="container">
+      <p>© 2024 CareSync Doc Appointment System. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS (jQuery, Popper, Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#addDoctorForm').submit(function (event) {
+        event.preventDefault();
+        alert('New doctor added successfully to the hospital!');
+        $('#addDoctorForm')[0].reset();
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* Body and background */
+body {
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #f8f9fa;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(135deg, #1c1c1c, #1c1b1b);
+  border-bottom: 2px solid #010101;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.navbar-logo {
+  height: 80px;
+  width: auto;
+  margin: 10px 15px;
+}
+
+/* Navbar brand & links */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #007bff;
+}
+
+.nav-link {
+  color: #ccc;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  transform: translateY(-3px);
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #007bff;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 50%;
+}
+
+/* Bright Card Styles */
+.card {
+  /* Make the signup card bright (white background and dark text) */
+  background: #b6b4b4;
+  color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+  background: #ffffff;
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+}
+
+.card-body {
+  background: #303030;
+  color: #f3f0f0;
+}
+
+/* Form Inputs */
+.form-control {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  color: #000;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: none;
+  background-color: #ffffff;
+}
+
+/* Buttons */
+.btn {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Link Styling */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer (Optional) */
+footer {
+  background: #121212;
+  color: #bbb;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  border-top: 1px solid #444;
+}
